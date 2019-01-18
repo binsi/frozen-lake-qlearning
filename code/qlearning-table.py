@@ -42,7 +42,6 @@ for i in range(num_episodes):
     while j < 100:
         j += 1
         # Choose an action by greedily (with noise) picking from Q table
-        # TODO Your code here (one line)
         a = np.argmax(Q[s,:] + np.random.randn(1,action_space)*(1./(i+1)))
 
         # Get new state and reward from environment
@@ -50,7 +49,6 @@ for i in range(num_episodes):
         # print(j, s1)
 
         # Update Q-Table with new knowledge implementing the Bellmann Equation
-        # TODO Your code here (one line) Q(s, a)+ = τ (r + γ(max(Q(s0, a0)) − Q(s, a))
         Q[s,a] = Q[s,a] + lr* (r + y * (np.max(Q[s1,:]) - Q[s,a]) )
 
         # Add reward to list
