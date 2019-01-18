@@ -1,0 +1,41 @@
+loss and reward:  0 tensor(0.0031, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  100 tensor(0.0001, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  200 tensor(0.0009, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  300 tensor(0.0040, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  400 tensor(4.6568e-05, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  500 tensor(0.0005, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  600 tensor(0.0005, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  700 tensor(5.0531e-06, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  800 tensor(0.0099, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  900 tensor(4.2286e-05, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1000 tensor(5.9839e-06, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1100 tensor(1.5709e-07, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1200 tensor(3.5831e-06, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1300 tensor(0.0025, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1400 tensor(3.7398e-06, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1500 tensor(1.6439e-07, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1600 tensor(6.4627e-07, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1700 tensor(3.7187e-06, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1800 tensor(2.7516e-07, grad_fn=<SmoothL1LossBackward>) -0.07
+loss and reward:  1900 tensor(1.7425e-08, grad_fn=<SmoothL1LossBackward>) -0.07
+\Average steps per episode: 14.386
+
+Score over time: -0.22902000000001382
+
+Final Q-Network Policy:
+
+right	right	right	down	down	down	down	down
+
+right	right	right	right	right	right	right	down
+
+right	right	right	right	right	right	right	down
+
+right	right	right	right	right	right	right	down
+
+right	right	right	right	right	right	right	down
+
+right	right	right	right	right	right	right	down
+
+right	right	right	right	right	right	right	down
+
+right	right	right	right	right	right	right	right

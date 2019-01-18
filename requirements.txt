@@ -1,0 +1,5 @@
+numpy==1.16.0
+matplotlib==3.0.2
+cycler==0.10.0
+pyparsing==2.3.1
+kiwisolver==1.0.1
