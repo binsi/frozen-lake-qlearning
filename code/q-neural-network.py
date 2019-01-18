@@ -24,7 +24,6 @@ class QNetwork(nn.Module):
 
     def __init__(self, state_space, action_space):
         super(QNetwork, self).__init__()
-        # TODO YOUR CODE HERE - simple network
         self.state_space = state_space
         self.hidden_size = state_space
 
@@ -33,9 +32,8 @@ class QNetwork(nn.Module):
 
     def forward(self, x):
         x = self.one_hot_encoding(x)
-        # TODO YOUR CODE HERE
         out1 = torch.sigmoid(self.l1(x))
-        return self.l2(out1)  # .view((-1)) # 1 x ACTION_SPACE_SIZE == 1 x 4  =>  4
+        return self.l2(out1) 
 
     def one_hot_encoding(self, x):
         '''
@@ -86,7 +84,6 @@ for i in range(num_episodes):
 
         # Choose an action by greedily (with e chance of random action) from the Q-network
         with torch.no_grad():
-            # TODO YOUR CODE HERE
             # Do a feedforward pass for the current state s to get predicted Q-values
             # for all actions (=> agent(s)) and use the max as action a: max_a Q(s, a)
             a = agent(s).max(1)[1].view(1, 1)  # max(1)[1] returns index of highest value
@@ -96,7 +93,6 @@ for i in range(num_episodes):
             a[0][0] = np.random.randint(1, 4)
 
         # Get new state and reward from environment
-        # TODO YOUR CODE HERE
         # perform action to get reward r, next state s1 and game_over flag
         # calculate maximum overall network outputs: max_a’ Q(s1, a’).
         r, s1, game_over = game.perform_action(actions[a])
@@ -106,7 +102,6 @@ for i in range(num_episodes):
         q1 = agent(s1).max(1)[0].view(1, 1)
 
         with torch.no_grad():
-            # TODO YOUR CODE HERE
             # Set target Q-value for action to: r + y max_a’ Q(s’, a’)
             target_q = r + y * q1
 
